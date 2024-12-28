@@ -1,11 +1,8 @@
 import React from 'react'
 
-const home = () => {
+const Home = () => {
   return (
-    <div><h1>
-            Home page
-        </h1>
-    </div>
+    <div><h1>Home page</h1></div>
   )
 }
 
