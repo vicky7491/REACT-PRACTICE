@@ -9,6 +9,7 @@ import Greet from './components/Greet';
 import Add from './components/Add';
 import { Footer } from './components/Footer';
 import MainContent from './components/MainContent';
+import JSXRules from './components/JSXRULES';
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
     </Routes>
     <MainContent/>
     <Add/>
+    <JSXRules/>
     <Footer/>
     </div>
   )
