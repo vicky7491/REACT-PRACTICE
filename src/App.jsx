@@ -1,34 +1,21 @@
-import React, { useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
-import About from './pages/About';
-import Home from './pages/Home';
-import Product from './pages/Product';
-import Contact from './pages/Contact';
-import Header from './components/Header';
-import Greet from './components/Greet';
-import Add from './components/Add';
-import { Footer } from './components/Footer';
-import MainContent from './components/MainContent';
-import JSXRules from './components/JSXRULES';
 
+import React from 'react';
+
+
+
+
+import Person from './components/Person';
+import Product from './components/Product';
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Greet/>
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/contact' element={<Contact />} />
-      <Route path='/product' element={<Product />} />
-    </Routes>
-    <MainContent/>
-    <Add/>
-    <JSXRules/>
-    <Footer/>
-    </div>
-  )
-}
+   
+      <div>
+        <Person name="Vicky" age={22} />
+        <Product name="iPhone" price={86000} /> {/* Ensure Product accepts these props */}
+      </div>
+   
+  );
+};
 
-export default App
+export default App;
