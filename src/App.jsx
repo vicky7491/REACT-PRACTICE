@@ -7,6 +7,8 @@ import Weather from './components/Weather';
 import UserStatus from './components/UserStatus';
 import InlineStyle from './components/inlineStyle';
 import StyleCard from './components/StyleCard';
+import StateHooks from './components/stateHooks';
+
 
 const App = () => {
   return (
@@ -20,6 +22,7 @@ const App = () => {
         <UserStatus  loggedIn={true} isAdmin={true}/>
         <InlineStyle/>
         <StyleCard/>
+        <StateHooks/>
       </div> 
       
        
